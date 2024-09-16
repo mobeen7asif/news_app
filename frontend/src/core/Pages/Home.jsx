@@ -8,9 +8,6 @@ import {
   loadSelectedOptions,
 } from "../Elements/Utils";
 import NewsList from "../Elements/NewsList";
-import { Link } from "react-router-dom";
-import customStyles from "../../styles/customStyles";
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
