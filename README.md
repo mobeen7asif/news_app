@@ -5,10 +5,10 @@ This project is a News Aggregator application with a Laravel backend and a React
 ## Project Structure
 
 news-aggregator/
-├── backend/ # Laravel backend
-├── frontend/ # React frontend
-├── docker-compose.yml
-└── README.md
+- backend/           (Laravel backend)
+- frontend/          (React frontend)
+- docker-compose.yml
+- README.md
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ The project uses Docker for both backend and frontend, with most of the environm
    NYTIMES=your_nytimes_api_key
    ```
 
-2. If needed, update any other environment variables in `backend/.env.example` and `frontend/.env.example` to match your specific requirements.
+2. If needed, update any other environment variables in `backend/.env.example` to match your specific requirements.
 
 ### 3. Docker Setup and Running the Application
 
@@ -74,6 +74,7 @@ Once the setup is complete and containers are running, you can access:
 - Displays news articles in a user-friendly interface
 - Allows filtering and searching of news articles
 - Responsive design for mobile and desktop viewing
+- Allow Filtered news based on the user preferences selected by user
 
 ## Technologies Used
 
