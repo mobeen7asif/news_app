@@ -18,16 +18,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
-
-        /**
-         * Get from NewsAPI in background
-         */
-        $schedule->call(function() {
-            $newsService = app(NewsService::class);
-        $fetchNewsController = new FetchNewsController($newsService);
-        $fetchNewsController->fetchNews();
-        })->everyFiveMinutes();
+        $schedule->command('news:fetch')->everyFiveMinutes();
     }
 
     /**

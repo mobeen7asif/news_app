@@ -34,6 +34,9 @@ echo "Caching routes..."
 php artisan route:cache
 
 # Start Nginx and PHP-FPM
+
+# Start the Laravel scheduler in the background
+php artisan schedule:work &
 echo "Starting Nginx..."
 service nginx start
 echo "Starting PHP-FPM..."

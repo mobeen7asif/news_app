@@ -15,4 +15,6 @@ vendor/
 
 dist/
 
+assets/js/
+
 tailwind.css

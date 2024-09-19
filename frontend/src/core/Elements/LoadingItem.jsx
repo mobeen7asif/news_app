@@ -1,12 +1,10 @@
 import React from "react";
 import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const LoadingItem = () => {
   return (
-    <div
-      key="loading-item"
-      className="flex flex-col overflow-hidden rounded-lg shadow-lg"
-    >
+    <div className="flex flex-col overflow-hidden rounded-lg shadow-lg">
       <div className="flex-shrink-0">
         <Skeleton height={190} />
       </div>
@@ -15,9 +13,9 @@ const LoadingItem = () => {
           <Skeleton width={100} />
           <Skeleton count={2} height={20} />
         </div>
-
-        <Skeleton count={4} height={10} inline={true} />
-
+        <div>
+          <Skeleton count={4} height={10} />
+        </div>
         <div className="mt-6">
           <Skeleton count={2} width={200} />
         </div>
