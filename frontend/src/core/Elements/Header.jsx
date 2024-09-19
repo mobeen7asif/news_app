@@ -29,7 +29,7 @@ const Header = () => {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <h1 className="font-bold text-2xl text-primary">
-                    News App
+                    News Aggregator App
                   </h1>
                 </div>
                 <div className="hidden sm:ml-8 sm:flex sm:space-x-8">
