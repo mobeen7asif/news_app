@@ -31,7 +31,7 @@ RUN composer install --no-dev --prefer-dist --no-scripts --no-progress --no-inte
 COPY backend /var/www/html
 
 # Copy the environment file
-COPY backend/.env /var/www/html/.env
+COPY backend/.env.example /var/www/html/.env
 
 # Set appropriate permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
