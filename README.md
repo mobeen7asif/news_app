@@ -75,6 +75,7 @@ Once the setup is complete and containers are running, you can access:
 - Allows filtering and searching of news articles
 - Responsive design for mobile and desktop viewing
 - Allow Filtered news based on the user preferences selected by user
+- Fetching news on background via command on every five minutes
 
 ## Technologies Used
 
