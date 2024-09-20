@@ -37,7 +37,10 @@ php artisan route:cache
 
 # Start the Laravel scheduler in the background
 php artisan schedule:work &
-echo "Starting Nginx..."
-service nginx start
 echo "Starting PHP-FPM..."
-php-fpm
+php-fpm &
+echo "Testing Nginx configuration..."
+nginx -t
+# Start Nginx in the foreground (this keeps the container running)
+echo "Starting Nginx..."
+nginx -g 'daemon off;'
